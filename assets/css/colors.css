@@ -5,7 +5,12 @@
     --accent-color: #E03436;
     --contrast-color: #333333;
     --tertiary-color: #648381;
-    /*Color Preset 2*/
+    /*Helldiver Color Preset 2*/
+    --hell-primary-color: #ffb400;
+    --hell-secondary-color: #ba6d00;
+    --hell-background-color: #222323;
+    --hell-tertiary-color: #686868;
+    --hell-contrast-color: #0092a6;
     /*Color Preset 3*/
     /*Color Preset 4*/
 }

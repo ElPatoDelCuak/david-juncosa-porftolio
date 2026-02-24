@@ -6,6 +6,7 @@
     <title>David Juncosa Portfolio</title>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="favicon" href="./assets/images/logos/color_1/d.png" type="image/png">
 </head>
 <body>
     <header>
@@ -13,6 +14,23 @@
             <img src="./assets/images/logos/color_1/d.png" alt="David Juncosa profile picture">
             <h3>David Juncosa</h3>
         </div>
+        <nav class="theme-tabs" style="display: none;">
+            <h2 class="theme-section-title">Select Theme</h2>
+            <div class="theme-section"></div>
+            <!-- TODO: change this to a javasript loop for render palettes dynamic-->
+            <button class="theme-option" data-theme="color_1">
+                <span class="theme-name">Color 1</span>
+                <span class="theme_palette">
+                    <span class="color color_1"></span>
+                    <span class="color color_2"></span>
+                    <span class="color color_3"></span>
+                    <span class="color color_4"></span>
+                    <span class="color color_5"></span>
+                </span>
+            </button>
+            <!-- TODO -->
+            <button class="close-themepicker"><i data-lucide="x"></i></button>
+        </nav>
         <nav class="nav-tabs">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
