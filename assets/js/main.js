@@ -6,7 +6,7 @@ const THEMES = {
         "contrast": "#333333",
         "tertiary": "#648381"
     },
-    "democratic-galaxy-theme": {
+    "democratic-galaxy": {
         "primary": "#ffb400",
         "secondary": "#ba6d00",
         "background": "#222323",
@@ -24,6 +24,12 @@ const THEMES = {
 
 document.addEventListener('DOMContentLoaded', () => {
     const themeSection = document.querySelector('.theme-section');
+    const themeTabs = document.querySelector('.theme-tabs');
+    const openBtn = document.querySelector('.change-color');
+    const closeBtn = document.querySelector('.close-themepicker');
+
+    openBtn.addEventListener('click', () => themeTabs.classList.toggle('open'));
+    closeBtn.addEventListener('click', () => themeTabs.classList.remove('open'));
 
     Object.entries(THEMES).forEach(([themeKey, colors]) => {
         const button = document.createElement('button');

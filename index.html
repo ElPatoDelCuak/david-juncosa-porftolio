@@ -9,24 +9,27 @@
     <link rel="favicon" href="./assets/images/logos/color_1/d.png" type="image/png">
 </head>
 <body>
-    <header>
-        <div class="profile-div">
-            <img src="./assets/images/logos/color_1/d.png" alt="David Juncosa profile picture">
-            <h3>David Juncosa</h3>
-        </div>
-        <nav class="theme-tabs" style="display: none;">
-            <h2 class="theme-section-title">Select Theme</h2>
-            <div class="theme-section"></div>
-
+    <div id="site-header">
+        <nav class="theme-tabs">
+            <div class="theme-tabs-inner">
+                <h2 class="theme-section-title">Select Theme</h2>
+                <div class="theme-section"></div>
+            </div>
             <button class="close-themepicker"><i data-lucide="x"></i></button>
         </nav>
-        <nav class="nav-tabs">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button class="change-color"><i data-lucide="paint-roller"></i></button>
-    </header>
+        <header>
+            <div class="profile-div">
+                <img src="./assets/images/logos/color_1/d.png" alt="David Juncosa profile picture">
+                <h3>David Juncosa</h3>
+            </div>
+            <nav class="nav-tabs">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="change-color"><i data-lucide="paint-roller"></i></button>
+        </header>
+    </div>
     <main>
         <section id="about">
             <h2>About Me</h2>
@@ -49,7 +52,6 @@
         <div class="social-media">
             <a href="#"><i data-lucide="linkedin"></i></a>
             <a href="#"><i data-lucide="github"></i></a>
-            <a href="#"><i data-lucide="twitter"></i></a>
         </div>
     </footer>
     <script src="./assets/js/main.js"></script>
