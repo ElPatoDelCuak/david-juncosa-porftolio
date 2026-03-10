@@ -1,26 +1,4 @@
-const THEMES = {
-    "classic-theme": {
-        "primary": "#FFFFFF",
-        "secondary": "#000000",
-        "accent": "#E03436",
-        "contrast": "#333333",
-        "tertiary": "#648381"
-    },
-    "democratic-galaxy": {
-        "primary": "#ffb400",
-        "secondary": "#ba6d00",
-        "background": "#222323",
-        "tertiary": "#686868",
-        "contrast": "#0092a6"
-    },
-    "cyberpunk-theme": {
-        "primary": "#000000",
-        "secondary": "#c5003c",
-        "accent": "#880425",
-        "contrast": "#f3e600",
-        "tertiary": "#55ead4"
-    },
-};
+let THEMES = {};
 
 document.addEventListener('DOMContentLoaded', () => {
     const themeSection = document.querySelector('.theme-section');
@@ -31,29 +9,74 @@ document.addEventListener('DOMContentLoaded', () => {
     openBtn.addEventListener('click', () => themeTabs.classList.toggle('open'));
     closeBtn.addEventListener('click', () => themeTabs.classList.remove('open'));
 
-    Object.entries(THEMES).forEach(([themeKey, colors]) => {
-        const button = document.createElement('button');
-        button.className = 'theme-option';
-        button.dataset.theme = themeKey;
+    // Highlight active nav link on click
+    const navLinks = document.querySelectorAll('.nav-tabs a');
 
-        const nameSpan = document.createElement('span');
-        nameSpan.className = 'theme-name';
-        nameSpan.textContent = themeKey
-            .replace(/-/g, ' ')
-            .replace(/\b\w/g, c => c.toUpperCase());
-
-        const paletteSpan = document.createElement('span');
-        paletteSpan.className = 'theme_palette';
-
-        Object.values(colors).forEach(colorValue => {
-            const colorSpan = document.createElement('span');
-            colorSpan.className = 'color';
-            colorSpan.style.backgroundColor = colorValue;
-            paletteSpan.appendChild(colorSpan);
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
         });
-
-        button.appendChild(nameSpan);
-        button.appendChild(paletteSpan);
-        themeSection.appendChild(button);
     });
+
+    // Set the first nav link as active by default
+    if (navLinks.length) navLinks[0].classList.add('active');
+
+    //Load themes from JSON file
+    fetch('./assets/js/themes.json')
+        .then(response => response.json())
+        .then(data => {
+            THEMES = data.themes;
+
+            // For each theme, create a button in the theme picker
+            Object.entries(THEMES).forEach(([themeKey, theme]) => {
+                const button = document.createElement('button');
+                button.className = 'theme-option';
+                button.dataset.theme = themeKey;
+
+                const pickerOpts = theme['theme-picker-options'];
+                button.style.backgroundColor = pickerOpts['theme-picker-bg'];
+                button.style.color = pickerOpts['theme-picker-text'];
+
+                const nameSpan = document.createElement('span');
+                nameSpan.className = 'theme-name';
+                nameSpan.textContent = theme.title;
+
+                const paletteSpan = document.createElement('span');
+                paletteSpan.className = 'theme_palette';
+
+                // Show the principal colors as small balls in the button
+                Object.values(theme.colors['principal-colors']).forEach(colorValue => {
+                    const colorSpan = document.createElement('span');
+                    colorSpan.className = 'color';
+                    colorSpan.style.backgroundColor = colorValue;
+                    paletteSpan.appendChild(colorSpan);
+                });
+
+                // When the button is clicked, apply the theme colors in colors.css
+                button.addEventListener('click', () => {
+                    const root = document.documentElement;
+                    Object.values(theme.colors).forEach(colorGroup => {
+                        Object.entries(colorGroup).forEach(([key, value]) => {
+                            root.style.setProperty(`--color-${key}`, value);
+                        });
+                    });
+
+                    // Highlight the active theme
+                    document.querySelectorAll('.theme-option').forEach(btn => {
+                        btn.style.border = 'none';
+                        btn.classList.remove('active');
+                    });
+                    button.style.border = `2px solid ${pickerOpts['theme-picker-active-border']}`;
+                    button.classList.add('active');
+                });
+                
+                button.appendChild(nameSpan);
+                button.appendChild(paletteSpan);
+                themeSection.appendChild(button);
+            });
+
+            document.querySelector('[data-theme="classic-theme"]').click();
+        })
+        .catch(error => console.error('Error loading themes:', error));
 });

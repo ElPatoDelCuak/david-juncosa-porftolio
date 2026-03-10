@@ -1,0 +1,167 @@
+{
+    "themes": {
+        "classic-theme": {
+            "title": "Classic Theme",
+            "colors": {
+                "principal-colors": {
+                    "primary": "#E03436",
+                    "secondary": "#000000",
+                    "background": "#FFFFFF",
+                    "text-color": "#333333",
+                    "tertiary": "#648381"
+                },
+                "secondary-colors": {
+                    "header-bg": "#f0f0f0",
+                    "icon-bg": "#555555",
+                    "icon-color": "#ffffff",
+                    "header-border": "transparent",
+                    "footer-border": "transparent"
+                }
+            },
+            "theme-picker-options": {
+                "theme-picker-bg": "#f0f0f0",
+                "theme-picker-active-border": "#E03436",
+                "theme-picker-text": "#333333"
+            }
+        },
+        "dark-theme": {
+            "title": "Dark Theme",
+            "colors": {
+                "principal-colors": {
+                    "primary": "#bb86fc",
+                    "secondary": "#03dac6",
+                    "background": "#121212",
+                    "text-color": "#ffffff",
+                    "tertiary": "#1e1e1e"
+                },
+                "secondary-colors": {
+                    "secondary-bg": "#2c2c2c",
+                    "secondary-contrast": "#bb86fc",
+                    "header-border": "transparent",
+                    "footer-border": "transparent"
+                }
+            },
+            "theme-picker-options": {
+                "theme-picker-bg": "#121212",
+                "theme-picker-active-border": "#bb86fc",
+                "theme-picker-text": "#ffffff"
+            }
+        },
+        "democratic-galaxy": {
+            "title": "Democratic Galaxy",
+            "colors": {
+                "principal-colors": {
+                    "primary": "#e7e00d",
+                    "secondary": "#686868",
+                    "background": "#1a1a1a",
+                    "contrast": "#0092a6",
+                    "tertiary": "#601616"
+                },
+                "secondary-colors": {
+                    "secondary-bg": "#686868",
+                    "text-color": "#e7e00d",
+                    "secondary-contrast": "#555555",
+                    "header-border": "transparent"
+
+                }
+            },
+            "theme-picker-options": {
+                "theme-picker-bg": "#222323",
+                "theme-picker-active-border": "#e7e00d",
+                "theme-picker-text": "#e7e00d"
+            }
+        },
+        "cyberpunk-theme": {
+            "title": "Cyberpunk Theme",
+            "colors": {
+                "principal-colors": {
+                    "primary": "#f3e600",
+                    "secondary": "#55ead4",
+                    "background": "#000000",
+                    "contrast": "#c5003c",
+                    "tertiary": "#880425"
+                },
+                "secondary-colors": {
+                    "secondary-bg": "#000000",
+                    "text-color": "#f3e600",
+                    "secondary-contrast": "#555555",
+                    "header-border": "#f3e600"
+                }
+            },
+            "theme-picker-options": {
+                "theme-picker-bg": "#000000",
+                "theme-picker-active-border": "#f3e600",
+                "theme-picker-text": "#f3e600"
+            }
+        },
+        "atomic-theme": {
+            "title": "Atomic Theme",
+            "colors": {
+                "principal-colors": {
+                    "primary": "#FEF265",
+                    "secondary": "#325886",
+                    "background": "#325886",
+                    "contrast": "#FEF265",
+                    "tertiary": "#FEF265"
+                },
+                "secondary-colors": {
+                    "secondary-bg": "#447AB9",
+                    "text-color": "#FEF265",
+                    "secondary-contrast": "#FEF265",
+                    "header-border": "#FEF265"
+                }
+            },
+            "theme-picker-options": {
+                "theme-picker-bg": "#325886",
+                "theme-picker-active-border": "#FEF265",
+                "theme-picker-text": "#FEF265"
+            }
+        },
+        "portal-theme": {
+            "title": "Portal Theme",
+            "colors": {
+                "principal-colors": {
+                    "primary": "#2DA8FF",
+                    "secondary": "#FF7A18",
+                    "background": "#F2F3F5",
+                    "contrast": "#FF7A18",
+                    "tertiary": "#FF7A18"
+                },
+                "secondary-colors": {
+                    "secondary-bg": "#F2F3F5",
+                    "text-color": "#1F2328",
+                    "secondary-contrast": "#ffffff",
+                    "header-border": "#D0D7DE"
+                }
+            },
+            "theme-picker-options": {
+                "theme-picker-bg": "#F2F3F5",
+                "theme-picker-active-border": "#2DA8FF",
+                "theme-picker-text": "#FF7A18"
+            }
+        },
+        "heisenberg-theme": {
+            "title": "Heisenberg Theme",
+            "colors": {
+                "principal-colors": {
+                    "primary": "#5FBF5F",
+                    "secondary": "#F2C94C",
+                    "background": "#0E3B2E",
+                    "contrast": "#D8C9A3",
+                    "tertiary": "#9a5430"
+                },
+                "secondary-colors": {
+                    "secondary-bg": "#0E3B2E",
+                    "text-color": "#F5F5F5",
+                    "secondary-contrast": "#D8C9A3",
+                    "header-border": "#5FBF5F"
+                }
+            },
+            "theme-picker-options": {
+                "theme-picker-bg": "#0E3B2E",
+                "theme-picker-active-border": "#5FBF5F",
+                "theme-picker-text": "#D8C9A3"
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/*=== COLORS ===*/
+:root {
+    /*=== PRINCIPAL COLORS ===*/
+    --color-primary: #E03436;
+    --color-secondary: #000000;
+    --color-background: #FFFFFF;
+    --color-contrast: #333333;
+    --color-tertiary: #648381;
+
+    /*=== SECONDARY COLORS ===*/
+    --color-secondary-bg: #f0f0f0;
+    --color-text-color: #333333;
+    --color-secondary-contrast: #555555;
+}
