@@ -18,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 25rem;
+    padding: 2rem 25rem;
     background-color: var(--color-background);
     border-bottom: 1px solid var(--color-header-border);
 }
@@ -39,6 +39,7 @@ header {
 .profile-div h3 {
     font-size: 1rem;
     font-weight: bold;
+    font-family: var(--font-title);
 }
 
 /*=== NAV TABS ===*/
@@ -57,7 +58,7 @@ header {
 
 .nav-tabs a:hover {
     border-bottom: solid 5px;
-    border-bottom-color: var(--color-secondary-contrast);
+    border-bottom-color: var(--color-text-color);
 }
 
 .nav-tabs a.active {
@@ -72,7 +73,7 @@ nav.theme-tabs {
     justify-content: center;
     gap: 1rem;
     padding: 0 6rem;
-    background-color: var(--color-secondary-bg);
+    background-color: var(--color-theme-header-bg);
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.35s ease, padding 0.35s ease;
@@ -89,7 +90,7 @@ nav.theme-tabs.open {
 }
 
 .change-color {
-    background: var(--color-secondary-bg);
+    background: var(--color-theme-picker-icon-bg);
     border: 1px solid transparent;
     border-radius: 50%;
     padding: 0.5rem;
@@ -100,7 +101,7 @@ nav.theme-tabs.open {
 }
 
 .change-color:hover {
-    border: 1px solid var(--color-secondary);
+    background: var(--color-theme-picker-icon-bg-hover);
 }
 
 .change-color:active {
@@ -111,7 +112,11 @@ nav.theme-tabs.open {
     width: 20px;
     height: 20px;
     fill: transparent;
-    color: var(--color-text-color);
+    color: var(--color-theme-picker-icon-color);
+}
+
+.change-color:hover svg {
+    color: var(--color-theme-picker-icon-color-hover);
 }
 
 .theme-tabs-inner {
@@ -161,7 +166,6 @@ nav.theme-tabs.open {
 }
 
 .theme-option.active {
-    background-color: var(--color-primary);
     border-color: var(--color-primary);
 }
 
@@ -202,9 +206,9 @@ nav.theme-tabs.open {
 
 /*=== MAIN ===*/
 main {
-    max-width: 800px;
+    max-width: 1150px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -223,6 +227,7 @@ main h2 {
     font-weight: bold;
     border-bottom: 2px solid var(--color-primary);
     padding-bottom: 0.4rem;
+    font-family: var(--font-title);
 }
 
 main ul {
@@ -237,11 +242,86 @@ main a {
     color: var(--color-primary);
 }
 
+/*=== COVER ===*/
+#cover {
+    min-height: 40vh;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#cover p:first-child {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    opacity: 0.85;
+    margin-bottom: -0.5rem;
+}
+
+#cover h1 {
+    font-size: clamp(3.2rem, 9vw, 6rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--color-text-color);
+    font-family: var(--font-title);
+}
+
+#cover p:last-child {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    max-width: 660px;
+    opacity: 0.75;
+    margin-top: 0.25rem;
+}
+
+/*=== PROJECTS GRID ===*/
+grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--color-theme-header-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+card h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+card p {
+    font-size: 0.875rem;
+    color: var(--color-text-color);
+    padding: 0 1rem 1rem;
+    opacity: 0.8;
+}
+
 /*=== FOOTER ===*/
 footer {
     text-align: center;
     padding: 1.5rem 2rem;
-    border-top: 1px solid var(--color-primary);
+    border-top: 1px solid var(--color-footer-border);
     background-color: var(--color-background);
     margin-top: auto;
 }
@@ -253,11 +333,11 @@ footer {
 }
 
 .social-media a {
-    color: var(--color-contrast);
+    color: var(--color-footer-icons-color);
     display: flex;
     align-items: center;
 }
 
 .social-media a:hover {
-    color: var(--color-primary);
+    color: var(--color-footer-icons-hover-color);
 }

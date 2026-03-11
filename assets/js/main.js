@@ -62,6 +62,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         });
                     });
 
+                    // Apply theme fonts
+                    if (theme.fonts && theme.fonts['title-font']) {
+                        root.style.setProperty('--font-title', `'${theme.fonts['title-font']}'`);
+                    } else {
+                        root.style.removeProperty('--font-title');
+                    }
+
+                    // Apply theme cursor
+                    if (theme.cursor) {
+                        root.style.setProperty('--cursor', theme.cursor);
+                    } else {
+                        root.style.removeProperty('--cursor');
+                    }
+
                     // Highlight the active theme
                     document.querySelectorAll('.theme-option').forEach(btn => {
                         btn.style.border = 'none';

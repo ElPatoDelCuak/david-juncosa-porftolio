@@ -4,11 +4,17 @@
     --color-primary: #E03436;
     --color-secondary: #000000;
     --color-background: #FFFFFF;
-    --color-contrast: #333333;
+    --color-text-color: #333333;
     --color-tertiary: #648381;
 
     /*=== SECONDARY COLORS ===*/
-    --color-secondary-bg: #f0f0f0;
-    --color-text-color: #333333;
-    --color-secondary-contrast: #555555;
+    --color-theme-header-bg: #f0f0f0;
+    --color-header-border: transparent;
+    --color-footer-border: transparent;
+
+    /*=== ICON COLORS ===*/
+    --color-theme-picker-icon-bg: #333333;
+    --color-theme-picker-icon-color: #ffffff;
+    --color-footer-icons-color: #333333;
+    --color-footer-icons-hover-color: #E03436;
 }

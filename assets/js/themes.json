@@ -11,11 +11,17 @@
                     "tertiary": "#648381"
                 },
                 "secondary-colors": {
-                    "header-bg": "#f0f0f0",
-                    "icon-bg": "#555555",
-                    "icon-color": "#ffffff",
+                    "theme-header-bg": "#f0f0f0",
                     "header-border": "transparent",
                     "footer-border": "transparent"
+                },
+                "icons-colors": {
+                    "theme-picker-icon-bg": "#555555",
+                    "theme-picker-icon-bg-hover": "#f0f0f0",
+                    "theme-picker-icon-color": "#FFFFFF",
+                    "theme-picker-icon-color-hover": "#000000",
+                    "footer-icons-color": "#333333",
+                    "footer-icons-hover-color": "#E03436"
                 }
             },
             "theme-picker-options": {
@@ -35,10 +41,15 @@
                     "tertiary": "#1e1e1e"
                 },
                 "secondary-colors": {
-                    "secondary-bg": "#2c2c2c",
-                    "secondary-contrast": "#bb86fc",
+                    "theme-header-bg": "#2c2c2c",
                     "header-border": "transparent",
                     "footer-border": "transparent"
+                },
+                "icons-colors": {
+                    "theme-picker-icon-bg": "#FFFFFF",
+                    "theme-picker-icon-color": "#121212",
+                    "footer-icons-color": "#FFFFFF",
+                    "footer-icons-hover-color": "#bb86fc"
                 }
             },
             "theme-picker-options": {
@@ -54,16 +65,23 @@
                     "primary": "#e7e00d",
                     "secondary": "#686868",
                     "background": "#1a1a1a",
-                    "contrast": "#0092a6",
-                    "tertiary": "#601616"
+                    "text-color": "#e7e00d",
+                    "tertiary": "#0092a6"
                 },
                 "secondary-colors": {
-                    "secondary-bg": "#686868",
-                    "text-color": "#e7e00d",
-                    "secondary-contrast": "#555555",
-                    "header-border": "transparent"
-
+                    "theme-header-bg": "#686868",
+                    "header-border": "#e7e00d",
+                    "footer-border": "#e7e00d"
+                },
+                "icons-colors": {
+                    "theme-picker-icon-bg": "#e7e00d",
+                    "theme-picker-icon-color": "#000000",
+                    "footer-icons-color": "#FFFFFF",
+                    "footer-icons-hover-color": "#e7e00d"
                 }
+            },
+            "fonts": {
+                "title-font": "FS Sinclair"
             },
             "theme-picker-options": {
                 "theme-picker-bg": "#222323",
@@ -78,66 +96,28 @@
                     "primary": "#f3e600",
                     "secondary": "#55ead4",
                     "background": "#000000",
-                    "contrast": "#c5003c",
-                    "tertiary": "#880425"
+                    "text-color": "#f3e600",
+                    "tertiary": "#c5003c"
                 },
                 "secondary-colors": {
-                    "secondary-bg": "#000000",
-                    "text-color": "#f3e600",
-                    "secondary-contrast": "#555555",
-                    "header-border": "#f3e600"
+                    "theme-header-bg": "#000000",
+                    "header-border": "#f3e600",
+                    "footer-border": "#f3e600"
+                },
+                "icons-colors": {
+                    "theme-picker-icon-bg": "#f3e600",
+                    "theme-picker-icon-color": "#000000",
+                    "footer-icons-color": "#55ead4",
+                    "footer-icons-hover-color": "#c5003c"
                 }
+            },
+            "fonts": {
+                "title-font": "Cyberpunk"
             },
             "theme-picker-options": {
                 "theme-picker-bg": "#000000",
                 "theme-picker-active-border": "#f3e600",
                 "theme-picker-text": "#f3e600"
-            }
-        },
-        "atomic-theme": {
-            "title": "Atomic Theme",
-            "colors": {
-                "principal-colors": {
-                    "primary": "#FEF265",
-                    "secondary": "#325886",
-                    "background": "#325886",
-                    "contrast": "#FEF265",
-                    "tertiary": "#FEF265"
-                },
-                "secondary-colors": {
-                    "secondary-bg": "#447AB9",
-                    "text-color": "#FEF265",
-                    "secondary-contrast": "#FEF265",
-                    "header-border": "#FEF265"
-                }
-            },
-            "theme-picker-options": {
-                "theme-picker-bg": "#325886",
-                "theme-picker-active-border": "#FEF265",
-                "theme-picker-text": "#FEF265"
-            }
-        },
-        "portal-theme": {
-            "title": "Portal Theme",
-            "colors": {
-                "principal-colors": {
-                    "primary": "#2DA8FF",
-                    "secondary": "#FF7A18",
-                    "background": "#F2F3F5",
-                    "contrast": "#FF7A18",
-                    "tertiary": "#FF7A18"
-                },
-                "secondary-colors": {
-                    "secondary-bg": "#F2F3F5",
-                    "text-color": "#1F2328",
-                    "secondary-contrast": "#ffffff",
-                    "header-border": "#D0D7DE"
-                }
-            },
-            "theme-picker-options": {
-                "theme-picker-bg": "#F2F3F5",
-                "theme-picker-active-border": "#2DA8FF",
-                "theme-picker-text": "#FF7A18"
             }
         },
         "heisenberg-theme": {
@@ -147,14 +127,19 @@
                     "primary": "#5FBF5F",
                     "secondary": "#F2C94C",
                     "background": "#0E3B2E",
-                    "contrast": "#D8C9A3",
+                    "text-color": "#F5F5F5",
                     "tertiary": "#9a5430"
                 },
                 "secondary-colors": {
-                    "secondary-bg": "#0E3B2E",
-                    "text-color": "#F5F5F5",
-                    "secondary-contrast": "#D8C9A3",
-                    "header-border": "#5FBF5F"
+                    "theme-header-bg": "#0E3B2E",
+                    "header-border": "#5FBF5F",
+                    "footer-border": "#5FBF5F"
+                },
+                "icons-colors": {
+                    "theme-picker-icon-bg": "#F5F5F5",
+                    "theme-picker-icon-color": "#000000",
+                    "footer-icons-color": "#F5F5F5",
+                    "footer-icons-hover-color": "#F2C94C"
                 }
             },
             "theme-picker-options": {

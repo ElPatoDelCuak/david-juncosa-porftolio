@@ -1,0 +1,18 @@
+/*=== FONTS ===*/
+@font-face {
+    font-family: 'FS Sinclair';
+    src: url('../fonts/FS Sinclair Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('../fonts/Cyberpunk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font-title: inherit;
+    --cursor: auto;
+}
