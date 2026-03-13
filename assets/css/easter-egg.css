@@ -1,0 +1,87 @@
+/*=== EASTER EGG BUTTON ===*/
+
+.easter-button {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 0.4rem;
+    bottom: 0.35rem;
+    z-index: 2;
+    border-radius: 2px;
+    border: 1px solid #9EA6AA;
+    background: #D6DDDF;
+    box-shadow: inset 1px 1px 0 #F6FAFC, inset -1px -1px 0 #8A949A, 0 1px 0 rgba(0, 0, 0, 0.25);
+    cursor: var(--cursor-interactive);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(calc(-100% - 1rem));
+    transition: transform 0.55s steps(6, end), opacity 0.18s linear;
+}
+
+.easter-button.is-ready {
+    visibility: visible;
+    pointer-events: none;
+    opacity: 0.52;
+    transform: translateX(calc(-100% - 1rem));
+}
+
+.easter-button.is-visible {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 0.52;
+    transform: translateX(0);
+}
+
+.easter-button.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(calc(-100% - 1rem));
+}
+
+.easter-button::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 0;
+    background: #7F878C;
+    top: 4px;
+    left: 4px;
+    box-shadow: 17px 0 0 #7F878C, 0 17px 0 #7F878C, 17px 17px 0 #7F878C;
+}
+
+#easter-button {
+    border: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 0;
+    clip-path: polygon(20% 0, 80% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 20%);
+    background: #D30E0E;
+    box-shadow: inset 1px 1px 0 #FF7F7F, inset -1px -1px 0 #7F0000, 0 2px 0 #7F0000, 0 3px 0 #4F0000;
+    transform: translateY(-1px);
+    image-rendering: pixelated;
+    transition: transform 0.08s steps(2, end), box-shadow 0.08s steps(2, end), filter 0.15s ease;
+}
+
+.easter-button.is-visible:hover {
+    opacity: 0.82;
+}
+
+#easter-button:hover {
+    filter: brightness(1.1);
+}
+
+#easter-button:active {
+    transform: translateY(1px);
+    box-shadow: inset 1px 1px 0 #FF7F7F, inset -1px -1px 0 #7F0000, 0 1px 0 #7F0000;
+}
+
+#easter-button:focus-visible {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 3px;
+}

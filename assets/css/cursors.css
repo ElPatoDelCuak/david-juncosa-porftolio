@@ -1,6 +1,8 @@
 :root {
-	--cursor-500kg: url('../images/cursors/democratic-galaxy/500Kg.cur'), auto;
-	--cursor-500kg-hover: url('../images/cursors/democratic-galaxy/hell-bomb.cur'), pointer;
+	--cursor-democratic-galaxy: url('../images/cursors/democratic-galaxy/500Kg.cur'), auto;
+	--cursor-democratic-galaxy-hover: url('../images/cursors/democratic-galaxy/hell-bomb.cur'), pointer;
+	--cursor-cyberpunk: url('../images/cursors/cyberpunk/arrow.cur'), auto;
+	--cursor-cyberpunk-hover: url('../images/cursors/cyberpunk/link.cur'), pointer;
 	--cursor-body: auto;
 	--cursor-interactive: pointer;
 }

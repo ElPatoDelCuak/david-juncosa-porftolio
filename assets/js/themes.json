@@ -6,26 +6,36 @@
                 "principal-colors": {
                     "primary": "#E03436",
                     "secondary": "#000000",
-                    "background": "#FFFFFF",
+                    "background": "#f5f5f5f5",
                     "text-color": "#333333",
                     "tertiary": "#648381"
                 },
                 "secondary-colors": {
-                    "theme-header-bg": "#f0f0f0",
+                    "theme-header-bg": "#e5e5e5e5",
                     "header-border": "transparent",
                     "footer-border": "transparent"
                 },
+                "text-colors": {
+                    "h1-color": "#333333",
+                    "h2-color": "#E03436",
+                    "h3-color": "#648381",
+                    "links-color": "#E03436",
+                    "links-hover-color": "#648381",
+                    "border-nav-links-hover-color": "#333333"
+                },
                 "icons-colors": {
                     "theme-picker-icon-bg": "#555555",
-                    "theme-picker-icon-bg-hover": "#f0f0f0",
-                    "theme-picker-icon-color": "#FFFFFF",
+                    "theme-picker-icon-bg-hover": "#e5e5e5e5",
+                    "theme-picker-icon-color": "#f5f5f5f5",
                     "theme-picker-icon-color-hover": "#000000",
+                    "x-icon-color": "#333333",
+                    "x-icon-hover-color": "#E03436",
                     "footer-icons-color": "#333333",
                     "footer-icons-hover-color": "#E03436"
                 }
             },
             "theme-picker-options": {
-                "theme-picker-bg": "#f0f0f0",
+                "theme-picker-bg": "#e5e5e5e5",
                 "theme-picker-active-border": "#E03436",
                 "theme-picker-text": "#333333"
             }
@@ -45,10 +55,22 @@
                     "header-border": "transparent",
                     "footer-border": "transparent"
                 },
+                "text-colors": {
+                    "h1-color": "#ffffff",
+                    "h2-color": "#bb86fc",
+                    "h3-color": "#03dac6",
+                    "links-color": "#bb86fc",
+                    "links-hover-color": "#03dac6",
+                    "border-nav-links-hover-color": "#ffffff"
+                },
                 "icons-colors": {
-                    "theme-picker-icon-bg": "#FFFFFF",
+                    "theme-picker-icon-bg": "#ffffff",
+                    "theme-picker-icon-bg-hover": "#bb86fc",
                     "theme-picker-icon-color": "#121212",
-                    "footer-icons-color": "#FFFFFF",
+                    "theme-picker-icon-color-hover": "#ffffff",
+                    "x-icon-color": "#ffffff",
+                    "x-icon-hover-color": "#bb86fc",
+                    "footer-icons-color": "#ffffff",
                     "footer-icons-hover-color": "#bb86fc"
                 }
             },
@@ -66,17 +88,29 @@
                     "secondary": "#686868",
                     "background": "#1a1a1a",
                     "text-color": "#e7e00d",
-                    "tertiary": "#0092a6"
+                    "tertiary": "#41639c"
                 },
                 "secondary-colors": {
                     "theme-header-bg": "#686868",
                     "header-border": "#e7e00d",
                     "footer-border": "#e7e00d"
                 },
+                "text-colors": {
+                    "h1-color": "#e7e00d",
+                    "h2-color": "#e7e00d",
+                    "h3-color": "#41639c",
+                    "links-color": "#e7e00d",
+                    "links-hover-color": "#41639c",
+                    "border-nav-links-hover-color": "#41639c"
+                },
                 "icons-colors": {
                     "theme-picker-icon-bg": "#e7e00d",
+                    "theme-picker-icon-bg-hover": "#f0f0f0",
                     "theme-picker-icon-color": "#000000",
-                    "footer-icons-color": "#FFFFFF",
+                    "theme-picker-icon-color-hover": "#000000",
+                    "x-icon-color": "#e7e00d",
+                    "x-icon-hover-color": "#f0f0f0",
+                    "footer-icons-color": "#f0f0f0",
                     "footer-icons-hover-color": "#e7e00d"
                 }
             },
@@ -84,8 +118,8 @@
                 "title-font": "FS Sinclair"
             },
             "cursor": {
-                "personalized-cursor": "var(--cursor-500kg)",
-                "interactive-cursor": "var(--cursor-500kg-hover)"
+                "personalized-cursor": "var(--cursor-democratic-galaxy)",
+                "interactive-cursor": "var(--cursor-democratic-galaxy-hover)"
             },
             "theme-picker-options": {
                 "theme-picker-bg": "#222323",
@@ -108,12 +142,28 @@
                     "header-border": "#f3e600",
                     "footer-border": "#f3e600"
                 },
+                "text-colors": {
+                    "h1-color": "#f3e600",
+                    "h2-color": "#55ead4",
+                    "h3-color": "#c5003c",
+                    "links-color": "#55ead4",
+                    "links-hover-color": "#c5003c",
+                    "border-nav-links-hover-color": "#55ead4"
+                },
                 "icons-colors": {
                     "theme-picker-icon-bg": "#f3e600",
+                    "theme-picker-icon-bg-hover": "#55ead4",
                     "theme-picker-icon-color": "#000000",
+                    "theme-picker-icon-color-hover": "#000000",
+                    "x-icon-color": "#f3e600",
+                    "x-icon-hover-color": "#c5003c",
                     "footer-icons-color": "#55ead4",
                     "footer-icons-hover-color": "#c5003c"
                 }
+            },
+            "cursor": {
+                "personalized-cursor": "var(--cursor-cyberpunk)",
+                "interactive-cursor": "var(--cursor-cyberpunk-hover)"
             },
             "theme-picker-options": {
                 "theme-picker-bg": "#000000",
@@ -136,9 +186,21 @@
                     "header-border": "#5FBF5F",
                     "footer-border": "#5FBF5F"
                 },
+                "text-colors": {
+                    "h1-color": "#F5F5F5",
+                    "h2-color": "#5FBF5F",
+                    "h3-color": "#F2C94C",
+                    "links-color": "#F2C94C",
+                    "links-hover-color": "#5FBF5F",
+                    "border-nav-links-hover-color": "#F2C94C"
+                },
                 "icons-colors": {
                     "theme-picker-icon-bg": "#F5F5F5",
+                    "theme-picker-icon-bg-hover": "#5FBF5F",
                     "theme-picker-icon-color": "#000000",
+                    "theme-picker-icon-color-hover": "#000000",
+                    "x-icon-color": "#F5F5F5",
+                    "x-icon-hover-color": "#5FBF5F",
                     "footer-icons-color": "#F5F5F5",
                     "footer-icons-hover-color": "#F2C94C"
                 }

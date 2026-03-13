@@ -12,9 +12,21 @@
     --color-header-border: transparent;
     --color-footer-border: transparent;
 
+    /*=== TEXT COLORS ===*/
+    --color-h1-color: #333333;
+    --color-h2-color: #648381;
+    --color-h3-color: #E03436;
+    --color-links-color: #E03436;
+    --color-links-hover-color: #648381;
+    --color-border-nav-links-hover-color: #333333;
+
     /*=== ICON COLORS ===*/
     --color-theme-picker-icon-bg: #333333;
     --color-theme-picker-icon-color: #ffffff;
+    --color-theme-picker-icon-bg-hover: #555555;
+    --color-theme-picker-icon-color-hover: #ffffff;
+    --color-x-icon-color: #333333;
+    --color-x-icon-hover-color: #E03436;
     --color-footer-icons-color: #333333;
     --color-footer-icons-hover-color: #E03436;
 }
