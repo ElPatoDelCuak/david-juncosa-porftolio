@@ -83,6 +83,10 @@
             "fonts": {
                 "title-font": "FS Sinclair"
             },
+            "cursor": {
+                "personalized-cursor": "var(--cursor-500kg)",
+                "interactive-cursor": "var(--cursor-500kg-hover)"
+            },
             "theme-picker-options": {
                 "theme-picker-bg": "#222323",
                 "theme-picker-active-border": "#e7e00d",
@@ -110,9 +114,6 @@
                     "footer-icons-color": "#55ead4",
                     "footer-icons-hover-color": "#c5003c"
                 }
-            },
-            "fonts": {
-                "title-font": "Cyberpunk"
             },
             "theme-picker-options": {
                 "theme-picker-bg": "#000000",

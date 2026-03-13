@@ -5,14 +5,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'Cyberpunk';
-    src: url('../fonts/Cyberpunk.ttf') format('truetype');
+    font-family: 'Breaking Bad';
+    src: url('../fonts/Heart Breaking Bad.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-}
-
-:root {
-    --font-title: inherit;
-    --cursor: auto;
 }

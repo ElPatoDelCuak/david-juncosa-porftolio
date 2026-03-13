@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeTabs = document.querySelector('.theme-tabs');
     const openBtn = document.querySelector('.change-color');
     const closeBtn = document.querySelector('.close-themepicker');
+    const easterBtn = document.getElementById('easter-button');
 
     openBtn.addEventListener('click', () => themeTabs.classList.toggle('open'));
     closeBtn.addEventListener('click', () => themeTabs.classList.remove('open'));
@@ -70,10 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
 
                     // Apply theme cursor
-                    if (theme.cursor) {
-                        root.style.setProperty('--cursor', theme.cursor);
+                    if (theme.cursor && theme.cursor['personalized-cursor']) {
+                        root.style.setProperty('--cursor-body', theme.cursor['personalized-cursor']);
+                        root.style.setProperty(
+                            '--cursor-interactive',
+                            theme.cursor['interactive-cursor'] || theme.cursor['personalized-cursor']
+                        );
                     } else {
-                        root.style.removeProperty('--cursor');
+                        root.style.removeProperty('--cursor-body');
+                        root.style.removeProperty('--cursor-interactive');
                     }
 
                     // Highlight the active theme

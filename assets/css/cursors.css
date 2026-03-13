@@ -1,0 +1,6 @@
+:root {
+	--cursor-500kg: url('../images/cursors/democratic-galaxy/500Kg.cur'), auto;
+	--cursor-500kg-hover: url('../images/cursors/democratic-galaxy/hell-bomb.cur'), pointer;
+	--cursor-body: auto;
+	--cursor-interactive: pointer;
+}
