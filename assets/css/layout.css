@@ -376,8 +376,32 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(calc(-100% - 1rem));
+    transition: transform 0.55s steps(6, end), opacity 0.18s linear;
+}
+
+.easter-button.is-ready {
+    visibility: visible;
+    pointer-events: none;
     opacity: 0.52;
-    transition: opacity 0.2s ease;
+    transform: translateX(calc(-100% - 1rem));
+}
+
+.easter-button.is-visible {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 0.52;
+    transform: translateX(0);
+}
+
+.easter-button.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(calc(-100% - 1rem));
 }
 
 .easter-button::before {
@@ -405,7 +429,7 @@ footer {
     transition: transform 0.08s steps(2, end), box-shadow 0.08s steps(2, end), filter 0.15s ease;
 }
 
-.easter-button:hover {
+.easter-button.is-visible:hover {
     opacity: 0.82;
 }
 

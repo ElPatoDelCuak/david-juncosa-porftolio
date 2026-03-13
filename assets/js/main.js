@@ -5,10 +5,70 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeTabs = document.querySelector('.theme-tabs');
     const openBtn = document.querySelector('.change-color');
     const closeBtn = document.querySelector('.close-themepicker');
+    const easterWrap = document.querySelector('.easter-button');
     const easterBtn = document.getElementById('easter-button');
 
-    openBtn.addEventListener('click', () => themeTabs.classList.toggle('open'));
-    closeBtn.addEventListener('click', () => themeTabs.classList.remove('open'));
+    let easterDismissed = false;
+    let easterClicked = false;
+    let easterHideTimeout;
+
+    const showEasterEgg = () => {
+        if (easterDismissed || easterClicked || !easterWrap) return;
+
+        clearTimeout(easterHideTimeout);
+        easterWrap.classList.remove('is-hidden', 'is-visible');
+        easterWrap.classList.add('is-ready');
+
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                easterWrap.classList.add('is-visible');
+            });
+        });
+    };
+
+    const dismissEasterEggIfNotClicked = () => {
+        if (easterClicked || easterDismissed || !easterWrap) return;
+        easterDismissed = true;
+        clearTimeout(easterHideTimeout);
+        easterWrap.classList.remove('is-visible');
+        easterWrap.classList.add('is-ready');
+
+        easterHideTimeout = setTimeout(() => {
+            easterWrap.classList.remove('is-ready');
+            easterWrap.classList.add('is-hidden');
+        }, 450);
+    };
+
+    if (easterWrap) {
+        easterWrap.classList.add('is-hidden');
+    }
+
+    if (easterBtn) {
+        easterBtn.addEventListener('click', () => {
+            easterClicked = true;
+            if (easterWrap) {
+                clearTimeout(easterHideTimeout);
+                easterWrap.classList.remove('is-hidden', 'is-ready');
+                easterWrap.classList.add('is-visible');
+            }
+        });
+    }
+
+    openBtn.addEventListener('click', () => {
+        const willOpen = !themeTabs.classList.contains('open');
+        themeTabs.classList.toggle('open');
+
+        if (willOpen) {
+            showEasterEgg();
+        } else {
+            dismissEasterEggIfNotClicked();
+        }
+    });
+
+    closeBtn.addEventListener('click', () => {
+        themeTabs.classList.remove('open');
+        dismissEasterEggIfNotClicked();
+    });
 
     // Highlight active nav link on click
     const navLinks = document.querySelectorAll('.nav-tabs a');
@@ -89,6 +149,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                     button.style.border = `2px solid ${pickerOpts['theme-picker-active-border']}`;
                     button.classList.add('active');
+
+                    if (themeTabs.classList.contains('open')) {
+                        dismissEasterEggIfNotClicked();
+                    }
                 });
                 
                 button.appendChild(nameSpan);
