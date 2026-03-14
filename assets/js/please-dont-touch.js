@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	const closeBtn = document.querySelector('.close-themepicker');
 	const themeSection = document.querySelector('.theme-section');
 	const easterWrap = document.querySelector('.easter-button');
+	const easterBtn = document.querySelector('#easter-button');
 
 	// Stop early if any required element is missing to avoid runtime errors.
-	if (!themeTabs || !openBtn || !closeBtn || !themeSection || !easterWrap) {
+	if (!themeTabs || !openBtn || !closeBtn || !themeSection || !easterWrap || !easterBtn) {
 		return;
 	}
 
@@ -15,6 +16,23 @@ document.addEventListener('DOMContentLoaded', () => {
 	let easterDismissed = false;
 	// Stores the timeout id used to finish the hide animation.
 	let easterHideTimeout;
+	// Prevents multiple blackout overlays from being created.
+	let blackoutStarted = false;
+
+	const startBlackout = () => {
+		if (blackoutStarted) return;
+
+		blackoutStarted = true;
+		const blackoutLayer = document.createElement('div');
+		blackoutLayer.className = 'blackout-layer';
+		blackoutLayer.setAttribute('aria-hidden', 'true');
+		document.body.appendChild(blackoutLayer);
+		document.body.classList.add('blackout-active');
+
+		requestAnimationFrame(() => {
+			blackoutLayer.classList.add('is-active');
+		});
+	};
 
 	// Shows the easter button only when it has not been dismissed yet.
 	const showEasterEgg = () => {
@@ -58,6 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Initial state: the easter button starts completely hidden.
 	easterWrap.classList.add('is-hidden');
+
+	// Clicking the easter button triggers a 3-second screen blackout.
+	easterBtn.addEventListener('click', event => {
+		event.preventDefault();
+		dismissEasterEggIfNotClicked();
+		startBlackout();
+	});
 
 	// Open button behavior:
 	// - If picker is already open, reveal easter button.

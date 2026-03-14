@@ -85,3 +85,24 @@
     outline: 2px solid #FFFFFF;
     outline-offset: 3px;
 }
+
+/*=== BLACKOUT EFFECT ===*/
+
+body.blackout-active {
+    overflow: hidden;
+}
+
+.blackout-layer {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 3s linear;
+}
+
+.blackout-layer.is-active {
+    opacity: 1;
+    pointer-events: auto;
+}
