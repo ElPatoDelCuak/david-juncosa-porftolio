@@ -32,6 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		requestAnimationFrame(() => {
 			blackoutLayer.classList.add('is-active');
 		});
+
+		// Navigate exactly when the screen reaches full black to hide page swap.
+		blackoutLayer.addEventListener('transitionend', () => {
+			window.location.href = './easter-egg.html';
+		}, { once: true });
 	};
 
 	// Shows the easter button only when it has not been dismissed yet.
@@ -80,6 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Clicking the easter button triggers a 3-second screen blackout.
 	easterBtn.addEventListener('click', event => {
 		event.preventDefault();
+		const clickSound = new Audio('./assets/images/easter/button-effect.mp3');
+		clickSound.play();
 		dismissEasterEggIfNotClicked();
 		startBlackout();
 	});

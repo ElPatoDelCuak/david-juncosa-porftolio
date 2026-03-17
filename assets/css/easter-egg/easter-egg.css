@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 04B_30;
+    src: url(./../../fonts/04B_03__.TTF) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: '04B_30', monospace;
+    background: #293134;
+}
+/*=== EASTER EGG TRANSITION EFFECTS ===*/
+.page-entry-blackout {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #000;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+
+.page-entry-blackout.is-revealing {
+    opacity: 0;
+}
+
+/*=== EASTER DESK STYLE ===*/
+
+.desk {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1800px;
+    height: 700px;
+    background: #AFB3B6;
+    border: 4px solid #AFB3B6;
+    border-bottom: none;
+    z-index: 1000;
+}
+
+.underside-desk {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: #636F79;
+    border-top: 8px solid #8A8EA3;
+}

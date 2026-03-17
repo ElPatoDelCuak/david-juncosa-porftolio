@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/easter-egg/easter-egg.css">
+    <title>...</title>
+</head>
+<body>
+    <div class="page-entry-blackout" aria-hidden="true"></div>
+    <main>
+        <div class="monitor"></div>
+        <div class="desk">
+            <div class="superior-desk"></div>
+            <div class="mid-desk">
+                <div class="easter-button">
+                    <button id="red-button" class="red-button"></button>
+                </div>
+            </div>
+            <div class="inferior-desk"></div>
+            <div class="underside-desk"></div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const entryBlackout = document.querySelector('.page-entry-blackout');
+            if (!entryBlackout) return;
+
+            requestAnimationFrame(() => {
+                entryBlackout.classList.add('is-revealing');
+            });
+
+            entryBlackout.addEventListener('transitionend', () => {
+                entryBlackout.remove();
+            }, { once: true });
+        });
+    </script>
+</body>
+</html>

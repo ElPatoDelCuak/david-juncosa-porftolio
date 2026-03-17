@@ -106,3 +106,25 @@ body.blackout-active {
     opacity: 1;
     pointer-events: auto;
 }
+
+.blackout-layer.is-fading-out {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s linear;
+}
+
+.easter-video-overlay {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.easter-video-overlay video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
