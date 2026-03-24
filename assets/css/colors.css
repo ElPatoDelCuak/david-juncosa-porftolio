@@ -34,16 +34,26 @@
     --color-card-bg: #f5f5f5f5;
     --color-card-text-color: #333333;
     --color-card-title-color: #E03436;
+
     --color-card-repo-button-bg: #E03436;
     --color-card-repo-button-bg-hover: #648381;
     --color-card-repo-button-text-color: #ffffff;
     --color-card-repo-button-text-color-hover: #ffffff;
     --color-card-repo-button-border: #E03436;
     --color-card-repo-button-border-hover: #648381;
+
     --color-card-project-button-bg: #333333;
     --color-card-project-button-bg-hover: #E03436;
     --color-card-project-button-text-color: #ffffff;
     --color-card-project-button-text-color-hover: #ffffff;
     --color-card-project-button-border: #333333;
     --color-card-project-button-border-hover: #E03436;
+
+    /*=== VIEW MORE BUTTON COLORS ===*/
+    --color-view-more-button-bg: transparent;
+    --color-view-more-button-bg-hover: #E03436;
+    --color-view-more-button-text-color: #333333;
+    --color-view-more-button-text-color-hover: #f5f5f5f5;
+    --color-view-more-button-border: #333333;
+    --color-view-more-button-border-hover: #E03436;
 }
