@@ -89,6 +89,23 @@
                     "x-icon-hover-color": "#bb86fc",
                     "footer-icons-color": "#ffffff",
                     "footer-icons-hover-color": "#bb86fc"
+                },
+                "card-colors": {
+                    "card-bg": "#2c2c2c",
+                    "card-text-color": "#ffffff",
+                    "card-title-color": "#bb86fc",
+                    "card-repo-button-bg": "transparent",
+                    "card-repo-button-bg-hover": "#ffffff",
+                    "card-repo-button-text-color": "#ffffff",
+                    "card-repo-button-text-color-hover": "#2c2c2c",
+                    "card-repo-button-border": "#ffffff",
+                    "card-repo-button-border-hover": "#03dac6",
+                    "card-project-button-bg": "#bb86fc",
+                    "card-project-button-bg-hover": "#E03436",
+                    "card-project-button-text-color": "#f5f5f5f5",
+                    "card-project-button-text-color-hover": "#f5f5f5f5",
+                    "card-project-button-border": "#ddd",
+                    "card-project-button-border-hover": "#E03436"
                 }
             },
             "theme-picker-options": {
@@ -129,6 +146,23 @@
                     "x-icon-hover-color": "#f0f0f0",
                     "footer-icons-color": "#f0f0f0",
                     "footer-icons-hover-color": "#e7e00d"
+                },
+                "card-colors": {
+                    "card-bg": "#f5f5f5f5",
+                    "card-text-color": "#333333",
+                    "card-title-color": "#E03436",
+                    "card-repo-button-bg": "transparent",
+                    "card-repo-button-bg-hover": "#648381",
+                    "card-repo-button-text-color": "#333333",
+                    "card-repo-button-text-color-hover": "#f5f5f5f5",
+                    "card-repo-button-border": "#ddd",
+                    "card-repo-button-border-hover": "#648381",
+                    "card-project-button-bg": "#E03436",
+                    "card-project-button-bg-hover": "#E03436",
+                    "card-project-button-text-color": "#f5f5f5f5",
+                    "card-project-button-text-color-hover": "#f5f5f5f5",
+                    "card-project-button-border": "#ddd",
+                    "card-project-button-border-hover": "#E03436"
                 }
             },
             "fonts": {
@@ -176,6 +210,23 @@
                     "x-icon-hover-color": "#c5003c",
                     "footer-icons-color": "#55ead4",
                     "footer-icons-hover-color": "#c5003c"
+                },
+                "card-colors": {
+                    "card-bg": "#f5f5f5f5",
+                    "card-text-color": "#333333",
+                    "card-title-color": "#E03436",
+                    "card-repo-button-bg": "transparent",
+                    "card-repo-button-bg-hover": "#648381",
+                    "card-repo-button-text-color": "#333333",
+                    "card-repo-button-text-color-hover": "#f5f5f5f5",
+                    "card-repo-button-border": "#ddd",
+                    "card-repo-button-border-hover": "#648381",
+                    "card-project-button-bg": "#E03436",
+                    "card-project-button-bg-hover": "#E03436",
+                    "card-project-button-text-color": "#f5f5f5f5",
+                    "card-project-button-text-color-hover": "#f5f5f5f5",
+                    "card-project-button-border": "#ddd",
+                    "card-project-button-border-hover": "#E03436"
                 }
             },
             "cursor": {
@@ -220,6 +271,23 @@
                     "x-icon-hover-color": "#5FBF5F",
                     "footer-icons-color": "#F5F5F5",
                     "footer-icons-hover-color": "#F2C94C"
+                },
+                "card-colors": {
+                    "card-bg": "#f5f5f5f5",
+                    "card-text-color": "#333333",
+                    "card-title-color": "#E03436",
+                    "card-repo-button-bg": "transparent",
+                    "card-repo-button-bg-hover": "#648381",
+                    "card-repo-button-text-color": "#333333",
+                    "card-repo-button-text-color-hover": "#f5f5f5f5",
+                    "card-repo-button-border": "#ddd",
+                    "card-repo-button-border-hover": "#648381",
+                    "card-project-button-bg": "#E03436",
+                    "card-project-button-bg-hover": "#E03436",
+                    "card-project-button-text-color": "#f5f5f5f5",
+                    "card-project-button-text-color-hover": "#f5f5f5f5",
+                    "card-project-button-border": "#ddd",
+                    "card-project-button-border-hover": "#E03436"
                 }
             },
             "theme-picker-options": {
