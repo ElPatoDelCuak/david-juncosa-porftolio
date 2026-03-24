@@ -391,26 +391,27 @@ main a:hover {
     height: 16px;
 }
 
-.project-btn-primary {
+.project-btn-project {
     background-color: var(--color-card-project-button-bg);
     color: var(--color-card-project-button-text-color);
     border: none;
 }
-
-.project-btn-primary:hover {
-    color: var(--color-card-repo-button-text-color-hover);
-    background-color: var(--color-card-repo-button-bg-hover);
+    
+.project-btn-project:hover {
+    color: var(--color-card-project-button-text-color-hover);
+    background-color: var(--color-card-project-button-bg-hover);
 }
 
-.project-btn-secondary {
+.project-btn-repo {
     background-color: var(--color-card-repo-button-bg);
     color: var(--color-card-repo-button-text-color);
     border: 1px solid var(--color-card-repo-button-border);
 }
 
-.project-btn-secondary:hover {
+.project-btn-repo:hover {
     color: var(--color-card-repo-button-text-color-hover);
     background-color: var(--color-card-repo-button-bg-hover);
+    border: 1px solid var(--color-card-repo-button-border-hover);
 }
 
 .view-more {

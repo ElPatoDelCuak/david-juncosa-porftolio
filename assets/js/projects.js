@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 actions.appendChild(
                     createActionButton({
                         href: project.repoUrl,
-                        className: 'project-btn project-btn-secondary',
+                        className: 'project-btn project-btn-repo',
                         iconId: 'icon-github',
                         label: 'Repository',
                         ariaLabel: `View repository of ${project.name || ''}`.trim()
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         actions.appendChild(
                             createActionButton({
                                 href: repo.url,
-                                className: 'project-btn project-btn-secondary',
+                                className: 'project-btn project-btn-repo',
                                 iconId: 'icon-github',
                                 label: repo.label || 'Repository',
                                 ariaLabel: `View ${repo.label || 'repository'} of ${project.name || ''}`.trim()
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 actions.appendChild(
                     createActionButton({
                         href: project.projectUrl,
-                        className: 'project-btn project-btn-primary',
+                        className: 'project-btn project-btn-project',
                         iconId: 'icon-external-link',
                         label: 'View project',
                         ariaLabel: `View project ${project.name || ''}`.trim()

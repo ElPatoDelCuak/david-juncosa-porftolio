@@ -1,4 +1,5 @@
 let THEMES = {};
+const THEME_STORAGE_KEY = 'selectedTheme';
 
 document.addEventListener('DOMContentLoaded', () => {
     const themeSection = document.querySelector('.theme-section');
@@ -119,6 +120,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     button.style.border = `2px solid ${pickerOpts['theme-picker-active-border']}`;
                     button.classList.add('active');
 
+                    // Persist selected theme across pages/reloads
+                    try {
+                        localStorage.setItem(THEME_STORAGE_KEY, themeKey);
+                    } catch (error) {
+                        console.warn('Could not persist selected theme:', error);
+                    }
+
                 });
                 
                 button.appendChild(nameSpan);
@@ -126,7 +134,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 themeSection.appendChild(button);
             });
 
-            document.querySelector('[data-theme="classic-theme"]').click();
+            // Restore saved theme, fallback to classic theme
+            let initialTheme = 'classic-theme';
+
+            try {
+                const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+                if (savedTheme && THEMES[savedTheme]) {
+                    initialTheme = savedTheme;
+                }
+            } catch (error) {
+                console.warn('Could not read persisted theme:', error);
+            }
+
+            const initialThemeButton = document.querySelector(`[data-theme="${initialTheme}"]`)
+                || document.querySelector('[data-theme="classic-theme"]');
+
+            if (initialThemeButton) {
+                initialThemeButton.click();
+            }
         })
         .catch(error => console.error('Error loading themes:', error));
 });
