@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <script src="https://unpkg.com/lucide@0"></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" href="./assets/images/logos/color_1/favicon.png" type="image/png">
 </head>
@@ -15,7 +14,7 @@
                 <h2 class="theme-section-title">Select Theme</h2>
                 <div class="theme-section"></div>
             </div>
-            <button class="close-themepicker"><i data-lucide="x"></i></button>
+            <button class="close-themepicker" aria-label="Close theme picker"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-x"></use></svg></button>
         </nav>
         <header>
             <div class="profile-div">
@@ -28,50 +27,105 @@
                 <a href="./projects.html">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <button class="change-color"><i data-lucide="paint-roller"></i></button>
+            <button class="change-color" aria-label="Change theme"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-paint-roller"></use></svg></button>
         </header>
     </div>
     <main>
     <section id="cover">
-        <p>Hi, my name is David Juncosa.</p>
-        <h1>I'm a Developer.</h1>
-        <p>I'm a software developer who recently completed my web application development training. I specialize in backend development but have a passion for crafting beautiful and intuitive user interfaces.</p>
-    </section>
+        <p>My Projects.</p>
+        <h1>Projects</h1>
+        <p>This section showcases a selection of my personal and collaborative projects. It includes both educational work and real-world applications I have contributed to, reflecting my hands-on experience across different development stages. These projects highlight my technical growth, problem-solving approach, and focus on building practical, well-structured, and user-oriented solutions.</p>    </section>
     <section id="projects">
         <h2>Projects</h2>
-        <grid>
-            <card>
-                <img src="./assets/images/projects/django.png" alt="Django Project">
-                <h3>Django</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </card>
-            <card>
-                <img src="./assets/images/projects/nessun_dorma.png" alt="Nessun Dorma">
-                <h3>Nessun Dorma</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </card>
-            <card>
-                <img src="./assets/images/projects/animm.png" alt="Animm">
-                <h3>Animm</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </card>
-            <card>
-                <img src="./assets/images/projects/niko_niko.png" alt="Niko Niko">
-                <h3>Niko Niko</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </card>
-        </grid>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="./assets/images/projects/customlab.png" alt="CustomLab Project">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-name">CustomLab</h3>
+                    <p class="project-description">Plataforma orientada al desarrollo de soluciones a medida, con especial atencion a UX, estructura modular y rendimiento.</p>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn project-btn-primary" aria-label="Ver proyecto CustomLab">
+                            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-external-link"></use></svg>
+                            Ver proyecto
+                        </a>
+                        <a href="#" class="project-btn project-btn-secondary" aria-label="Ver repositorio de CustomLab">
+                            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-github"></use></svg>
+                            Repositorio
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="./assets/images/projects/nessun_dorma.png" alt="Nessun Dorma">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-name">Nessun Dorma</h3>
+                    <p class="project-description">Proyecto con enfoque narrativo y visual, diseñado para ofrecer una experiencia inmersiva con una presentacion clara del contenido.</p>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn project-btn-primary" aria-label="Ver proyecto Nessun Dorma">
+                            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-external-link"></use></svg>
+                            Ver proyecto
+                        </a>
+                        <a href="#" class="project-btn project-btn-secondary" aria-label="Ver repositorio de Nessun Dorma">
+                            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-github"></use></svg>
+                            Repositorio
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="./assets/images/projects/animm.png" alt="Animm">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-name">Animm</h3>
+                    <p class="project-description">Aplicacion web centrada en interaccion fluida y componentes reutilizables, optimizada para mantener consistencia visual en toda la UI.</p>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn project-btn-primary" aria-label="Ver proyecto Animm">
+                            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-external-link"></use></svg>
+                            Ver proyecto
+                        </a>
+                        <a href="#" class="project-btn project-btn-secondary" aria-label="Ver repositorio de Animm">
+                            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-github"></use></svg>
+                            Repositorio
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="./assets/images/projects/niko_niko.png" alt="Niko Niko">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-name">Niko Niko</h3>
+                    <p class="project-description">Solucion enfocada en simplicidad de uso y productividad, construida para resolver tareas concretas con una interfaz directa.</p>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn project-btn-primary" aria-label="Ver proyecto Niko Niko">
+                            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-external-link"></use></svg>
+                            Ver proyecto
+                        </a>
+                        <a href="#" class="project-btn project-btn-secondary" aria-label="Ver repositorio de Niko Niko">
+                            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-github"></use></svg>
+                            Repositorio
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
     </main>
     <footer>
         <div class="social-media">
-            <a href="#"><i data-lucide="linkedin"></i></a>
-            <a href="https://github.com/ElPatoDelCuak"><i data-lucide="github"></i></a>
+            <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-linkedin"></use></svg></a>
+            <a href="https://github.com/ElPatoDelCuak" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="./assets/svg/icons.svg#icon-github"></use></svg></a>
         </div>
     </footer>
     <script src="./assets/js/main.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
 </body>
 </html>
