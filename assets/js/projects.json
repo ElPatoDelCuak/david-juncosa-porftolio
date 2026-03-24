@@ -1,0 +1,45 @@
+{
+	"projects": [
+		{
+			"name": "CustomLab",
+			"image": "./assets/images/projects/customlab.png",
+			"alt": "CustomLab Project",
+			"description": "Proyecto de tienda online de ropa y otros productos personalizados. Enfocado en una experiencia de usuario atractiva y funcional.",
+			"projectUrl": "https://customlab-ui.vercel.app/",
+			"repoLinks": [
+				{
+					"label": "Frontend",
+					"url": "https://github.com/ElPatoDelCuak/CustomLab_UI"
+				},
+				{
+					"label": "Backend",
+					"url": "https://github.com/ElPatoDelCuak/CustomLab_API"
+				}
+			]
+		},
+		{
+			"name": "Nessun Dorma",
+			"image": "./assets/images/projects/nessun_dorma.png",
+			"alt": "Nessun Dorma",
+			"description": "Proyecto de una plataforma de registro de activos como cryptomonedas y metales preciosos.",
+			"projectUrl": "",
+			"repoUrl": "https://github.com/ElPatoDelCuak/Nessun_Dorma"
+		},
+		{
+			"name": "Animm",
+			"image": "./assets/images/projects/animm.png",
+			"alt": "Animm",
+			"description": "Animm is a video automation platform that helps brands and agencies quickly create and scale high-quality, on-brand motion content without production bottlenecks or extra teams.",
+			"projectUrl": "https://animm.co/",
+			"repoUrl": ""
+		},
+		{
+			"name": "Niko Niko",
+			"image": "./assets/images/projects/niko_niko.png",
+			"alt": "Niko Niko",
+			"description": "Plataforma online donde compartir y crear recetas con otros usuarios, y valorar las recetas.",
+			"projectUrl": "",
+			"repoUrl": "https://github.com/ElPatoDelCuak/Niko-Niko"
+		}
+	]
+}
