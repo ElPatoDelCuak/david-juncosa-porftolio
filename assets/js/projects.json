@@ -4,7 +4,7 @@
 			"name": "CustomLab",
 			"image": "./assets/images/projects/customlab.png",
 			"alt": "CustomLab Project",
-			"description": "Proyecto de tienda online de ropa y otros productos personalizados. Enfocado en una experiencia de usuario atractiva y funcional.",
+			"description": "Online store for clothing and custom products, focused on a clean design and a smooth, engaging user experience.",
 			"projectUrl": "https://customlab-ui.vercel.app/",
 			"repoLinks": [
 				{
@@ -21,7 +21,7 @@
 			"name": "Nessun Dorma",
 			"image": "./assets/images/projects/nessun_dorma.png",
 			"alt": "Nessun Dorma",
-			"description": "Proyecto de una plataforma de registro de activos como cryptomonedas y metales preciosos.",
+			"description": "Platform project for tracking assets like cryptocurrencies and precious metals, designed for clear and efficient management.",
 			"projectUrl": "",
 			"repoUrl": "https://github.com/ElPatoDelCuak/Nessun_Dorma"
 		},
@@ -37,7 +37,7 @@
 			"name": "Niko Niko",
 			"image": "./assets/images/projects/niko_niko.png",
 			"alt": "Niko Niko",
-			"description": "Plataforma online donde compartir y crear recetas con otros usuarios, y valorar las recetas.",
+			"description": "Online platform to create, share, and rate recipes, fostering community interaction and culinary inspiration.",
 			"projectUrl": "",
 			"repoUrl": "https://github.com/ElPatoDelCuak/Niko-Niko"
 		},
@@ -45,7 +45,7 @@
             "name": "My Portfolio",
 			"image": "./assets/images/projects/portfolio.png",
 			"alt": "My Portfolio",
-			"description": "My personal web portfolio.",
+			"description": "Personal web portfolio showcasing my projects and skills, featuring a user-friendly design with theme-switching functionality.",
 			"projectUrl": "https://david-juncosa.vercel.app/",
 			"repoUrl": "https://github.com/ElPatoDelCuak/david-juncosa-porftolio" 
         }

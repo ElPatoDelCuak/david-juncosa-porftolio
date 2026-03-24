@@ -150,6 +150,7 @@
                     "card-repo-button-text-color": "#f0f0f0",
                     "card-repo-button-text-color-hover": "#f0f0f0",
                     "card-repo-button-border": "#686868",
+                    "card-repo-button-border-hover": "#e7e00d",
                     "card-project-button-bg": "#e7e00d",
                     "card-project-button-bg-hover": "#f0f0f0",
                     "card-project-button-text-color": "#2c2c2c",
