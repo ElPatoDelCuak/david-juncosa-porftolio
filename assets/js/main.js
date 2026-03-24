@@ -10,18 +10,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeBtn.addEventListener('click', () => themeTabs.classList.remove('open'));
 
-    // Highlight active nav link on click
     const navLinks = document.querySelectorAll('.nav-tabs a');
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
-        });
-    });
+    // Normalize the page name from the URL path to match the href in nav links
+    const normalizePage = path => {
+        const cleanedPath = path.replace(/\/+$/, '');
+        const parts = cleanedPath.split('/').filter(Boolean);
+        return parts.length ? parts[parts.length - 1] : 'index.html';
+    };
 
-    // Set the first nav link as active by default
-    if (navLinks.length) navLinks[0].classList.add('active');
+    const normalizeHash = hash => (hash === '#' ? '' : hash || '');
+
+    const updateActiveNavLink = () => {
+        if (!navLinks.length) {
+            return;
+        }
+
+        const currentPage = normalizePage(window.location.pathname);
+        const currentHash = normalizeHash(window.location.hash);
+        let hasActiveLink = false;
+
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href') || '';
+            const targetUrl = new URL(href, window.location.href);
+            const targetPage = normalizePage(targetUrl.pathname);
+            const targetHash = normalizeHash(targetUrl.hash);
+
+            const samePage = targetPage === currentPage;
+            const isActive = samePage && (targetHash ? targetHash === currentHash : currentHash === '');
+
+            link.classList.toggle('active', isActive);
+            hasActiveLink = hasActiveLink || isActive;
+        });
+
+        if (!hasActiveLink) {
+            navLinks[0].classList.add('active');
+        }
+    };
+
+    updateActiveNavLink();
+    window.addEventListener('hashchange', updateActiveNavLink);
+    window.addEventListener('popstate', updateActiveNavLink);
 
     //Load themes from JSON file
     fetch('./assets/js/themes.json')
