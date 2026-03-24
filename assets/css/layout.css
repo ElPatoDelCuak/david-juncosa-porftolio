@@ -571,3 +571,73 @@ footer {
     line-height: 1.3;
     color: var(--color-text-color);
 }
+
+/*=== CONTACT PAGE ===*/
+
+.contact-section {
+    gap: 1.1rem;
+}
+
+.contact-intro {
+    max-width: 760px;
+    opacity: 0.9;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 0.35rem;
+}
+
+.contact-card {
+    background: var(--color-theme-header-bg);
+    border: 1px solid var(--color-header-border);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.contact-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-h3-color);
+}
+
+.contact-card p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.contact-link {
+    font-weight: 600;
+    width: fit-content;
+}
+
+.contact-cta {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 0.72rem 1.2rem;
+    border: 1px solid var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-background);
+    margin-top: 0.25rem;
+}
+
+.contact-cta:hover {
+    background: transparent;
+    color: var(--color-links-color);
+}
+
+@media (max-width: 640px) {
+    .contact-cta {
+        width: 100%;
+    }
+}
