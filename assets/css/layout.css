@@ -303,7 +303,7 @@ main a:hover {
 }
 
 .project-card {
-    background-color: var(--color-background);
+    background-color: var(--color-card-bg);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -320,7 +320,6 @@ main a:hover {
 .project-image {
     width: 100%;
     height: 280px;
-    background-color: var(--color-header-border);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -345,11 +344,11 @@ main a:hover {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: var(--color-text-color);
+    color: var(--color-card-title-color);
 }
 
 .project-description {
-    color: var(--color-text-color);
+    color: var(--color-card-text-color);
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
     opacity: 1;
@@ -393,25 +392,25 @@ main a:hover {
 }
 
 .project-btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-text-color);
+    background-color: var(--color-card-project-button-bg);
+    color: var(--color-card-project-button-text-color);
     border: none;
 }
 
 .project-btn-primary:hover {
-    color: #fff;
-    background-color: #333;
+    color: var(--color-card-repo-button-text-color-hover);
+    background-color: var(--color-card-repo-button-bg-hover);
 }
 
 .project-btn-secondary {
-    background-color: transparent;
-    color: var(--color-text-color);
-    border: 1px solid #ddd;
+    background-color: var(--color-card-repo-button-bg);
+    color: var(--color-card-repo-button-text-color);
+    border: 1px solid var(--color-card-repo-button-border);
 }
 
 .project-btn-secondary:hover {
-    color: var(--color-text-color);
-    background-color: var(--color-tertiary);
+    color: var(--color-card-repo-button-text-color-hover);
+    background-color: var(--color-card-repo-button-bg-hover);
 }
 
 .view-more {
