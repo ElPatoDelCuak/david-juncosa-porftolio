@@ -53,6 +53,26 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('hashchange', updateActiveNavLink);
     window.addEventListener('popstate', updateActiveNavLink);
 
+    const ageTarget = document.querySelector('#current-age');
+    if (ageTarget) {
+        const birthdateRaw = ageTarget.getAttribute('data-birthdate');
+        const birthdate = birthdateRaw ? new Date(`${birthdateRaw}T00:00:00`) : null;
+
+        if (birthdate && !Number.isNaN(birthdate.getTime())) {
+            const today = new Date();
+            let age = today.getFullYear() - birthdate.getFullYear();
+            const hasHadBirthdayThisYear =
+                today.getMonth() > birthdate.getMonth()
+                || (today.getMonth() === birthdate.getMonth() && today.getDate() >= birthdate.getDate());
+
+            if (!hasHadBirthdayThisYear) {
+                age -= 1;
+            }
+
+            ageTarget.textContent = String(age);
+        }
+    }
+
     //Load themes from JSON file
     fetch('./assets/js/themes.json')
         .then(response => response.json())
