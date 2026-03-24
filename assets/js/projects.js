@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         href: project.repoUrl,
                         className: 'project-btn project-btn-secondary',
                         iconId: 'icon-github',
-                        label: 'Repositorio',
-                        ariaLabel: `Ver repositorio de ${project.name || ''}`.trim()
+                        label: 'Repository',
+                        ariaLabel: `View repository of ${project.name || ''}`.trim()
                     })
                 );
             }
@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 href: repo.url,
                                 className: 'project-btn project-btn-secondary',
                                 iconId: 'icon-github',
-                                label: repo.label || 'Repositorio',
-                                ariaLabel: `Ver ${repo.label || 'repositorio'} de ${project.name || ''}`.trim()
+                                label: repo.label || 'Repository',
+                                ariaLabel: `View ${repo.label || 'repository'} of ${project.name || ''}`.trim()
                             })
                         );
                     });
@@ -85,8 +85,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         href: project.projectUrl,
                         className: 'project-btn project-btn-primary',
                         iconId: 'icon-external-link',
-                        label: 'Ver proyecto',
-                        ariaLabel: `Ver proyecto ${project.name || ''}`.trim()
+                        label: 'View project',
+                        ariaLabel: `View project ${project.name || ''}`.trim()
                     })
                 );
             }

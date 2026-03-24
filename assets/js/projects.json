@@ -40,6 +40,14 @@
 			"description": "Plataforma online donde compartir y crear recetas con otros usuarios, y valorar las recetas.",
 			"projectUrl": "",
 			"repoUrl": "https://github.com/ElPatoDelCuak/Niko-Niko"
-		}
+		},
+        {
+            "name": "My Portfolio",
+			"image": "./assets/images/projects/portfolio.png",
+			"alt": "My Portfolio",
+			"description": "My personal web portfolio.",
+			"projectUrl": "https://david-juncosa.vercel.app/",
+			"repoUrl": "https://github.com/ElPatoDelCuak/david-juncosa-porftolio" 
+        }
 	]
 }
