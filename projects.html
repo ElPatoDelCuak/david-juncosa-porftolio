@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/images/logos/color_1/favicon.png" type="image/png">
+</head>
+<body>
+    <div id="site-header">
+        <nav class="theme-tabs">
+            <div class="theme-tabs-inner">
+                <h2 class="theme-section-title">Select Theme</h2>
+                <div class="theme-section"></div>
+            </div>
+            <button class="close-themepicker"><i data-lucide="x"></i></button>
+        </nav>
+        <header>
+            <div class="profile-div">
+                <img src="./assets/images/logos/color_1/d_profile.png" alt="David Juncosa profile picture">
+                <h3>David Juncosa</h3>
+            </div>
+            <nav class="nav-tabs">
+                <a href="./index.html">Home</a>
+                <a href="./about-me.html">About</a>
+                <a href="./projects.html">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="change-color"><i data-lucide="paint-roller"></i></button>
+        </header>
+    </div>
+    <main>
+    <section id="cover">
+        <p>Hi, my name is David Juncosa.</p>
+        <h1>I'm a Developer.</h1>
+        <p>I'm a software developer who recently completed my web application development training. I specialize in backend development but have a passion for crafting beautiful and intuitive user interfaces.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <grid>
+            <card>
+                <img src="./assets/images/projects/django.png" alt="Django Project">
+                <h3>Django</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </card>
+            <card>
+                <img src="./assets/images/projects/nessun_dorma.png" alt="Nessun Dorma">
+                <h3>Nessun Dorma</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </card>
+            <card>
+                <img src="./assets/images/projects/animm.png" alt="Animm">
+                <h3>Animm</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </card>
+            <card>
+                <img src="./assets/images/projects/niko_niko.png" alt="Niko Niko">
+                <h3>Niko Niko</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </card>
+        </grid>
+    </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="#"><i data-lucide="linkedin"></i></a>
+            <a href="https://github.com/ElPatoDelCuak"><i data-lucide="github"></i></a>
+        </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
