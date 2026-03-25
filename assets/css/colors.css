@@ -64,4 +64,12 @@
     --color-view-more-button-text-color-hover: #f5f5f5f5;
     --color-view-more-button-border: #ddd;
     --color-view-more-button-border-hover: #E03436;
+
+    /*=== CONTACT COLORS ===*/
+    --color-contact-bg: #e5e5e5e5;
+    --color-contact-text-color: #333333;
+    --color-contact-title-color: #E03436;
+    --color-contact-link-color: #E03436;
+    --color-contact-link-hover-color: #648381;
+    --color-contact-border: transparent;
 }
