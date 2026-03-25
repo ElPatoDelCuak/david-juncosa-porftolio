@@ -1,4 +1,3 @@
-
 // --- Theme Management ---
 let THEMES = {};
 const THEME_STORAGE_KEY = 'selectedTheme';
@@ -144,10 +143,58 @@ function loadThemes() {
         .catch(error => console.error('Error loading themes:', error));
 }
 
+// Hamburger menu for mobile nav
+function setupHamburger() {
+    const header = document.querySelector('header');
+    const navTabs = document.querySelector('.nav-tabs');
+
+    if (!header || !navTabs) return;
+
+    const hamburger = document.createElement('button');
+    hamburger.className = 'hamburger';
+    hamburger.setAttribute('aria-label', 'Abrir menú');
+    hamburger.setAttribute('aria-expanded', 'false');
+    hamburger.innerHTML = '<span></span><span></span><span></span>';
+
+    // Insertar antes del botón de tema
+    const changeColor = header.querySelector('.change-color');
+    header.insertBefore(hamburger, changeColor);
+
+    function toggleMenu() {
+        const isOpen = navTabs.classList.toggle('open');
+        hamburger.classList.toggle('open', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+    }
+
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMenu();
+    });
+
+    // Cerrar al hacer click en un enlace
+    navTabs.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navTabs.classList.remove('open');
+            hamburger.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Cerrar al hacer click fuera
+    document.addEventListener('click', (e) => {
+        if (!header.contains(e.target)) {
+            navTabs.classList.remove('open');
+            hamburger.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
+    });
+}
+
 // --- Main initialization ---
 document.addEventListener('DOMContentLoaded', () => {
     setupThemePicker();
     setupNavHighlighting();
     updateAge();
     loadThemes();
+    setupHamburger();
 });
