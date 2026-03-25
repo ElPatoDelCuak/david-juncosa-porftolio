@@ -515,8 +515,8 @@ footer {
 }
 
 #knowledges-section .skill-item {
-    background: var(--color-theme-header-bg);
-    border: 1px solid var(--color-header-border);
+    background: var(--color-skills-bg);
+    border: 1px solid var(--color-skills-border);
     border-radius: 12px;
     padding: 0.9rem 1rem;
     display: flex;
@@ -529,7 +529,7 @@ footer {
 #knowledges-section .skill-item:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    border-color: var(--color-primary);
+    border-color: var(--color-skills-border);
 }
 
 #knowledges-section .skill-icon {
@@ -538,7 +538,7 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-primary);
+    color: var(--color-skills-icon-color);
     flex-shrink: 0;
 }
 
@@ -569,7 +569,34 @@ footer {
 #knowledges-section .skill-name {
     font-weight: 600;
     line-height: 1.3;
-    color: var(--color-text-color);
+    color: var(--color-skills-text-color);
+}
+
+#video-section {
+    gap: 1rem;
+}
+
+#video-section p {
+    max-width: 860px;
+    opacity: 0.9;
+}
+
+#video-section .video-placeholder {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--color-header-border);
+    background: var(--color-theme-header-bg);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.16);
+}
+
+#video-section .video-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 /*=== CONTACT PAGE ===*/
@@ -591,8 +618,8 @@ footer {
 }
 
 .contact-card {
-    background: var(--color-theme-header-bg);
-    border: 1px solid var(--color-header-border);
+    background: var(--color-contact-bg);
+    border: 1px solid var(--color-contact-border);
     border-radius: 12px;
     padding: 1rem;
     display: flex;
@@ -603,7 +630,7 @@ footer {
 .contact-card h3 {
     font-size: 1rem;
     font-weight: 700;
-    color: var(--color-h3-color);
+    color: var(--color-contact-title-color);
 }
 
 .contact-card p {
@@ -614,6 +641,13 @@ footer {
 .contact-link {
     font-weight: 600;
     width: fit-content;
+    color: var(--color-contact-link-color);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: var(--color-contact-link-hover-color);
+    text-decoration: underline;
 }
 
 .contact-cta {

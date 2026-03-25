@@ -3,57 +3,65 @@
     /*=== PRINCIPAL COLORS ===*/
     --color-primary: #E03436;
     --color-secondary: #000000;
-    --color-background: #FFFFFF;
+    --color-background: #f5f5f5f5;
     --color-text-color: #333333;
     --color-tertiary: #648381;
 
     /*=== SECONDARY COLORS ===*/
-    --color-theme-header-bg: #f0f0f0;
+    --color-theme-header-bg: #e5e5e5e5;
     --color-header-border: transparent;
     --color-footer-border: transparent;
 
     /*=== TEXT COLORS ===*/
     --color-h1-color: #333333;
-    --color-h2-color: #648381;
-    --color-h3-color: #E03436;
+    --color-h2-color: #E03436;
+    --color-h3-color: #648381;
     --color-links-color: #E03436;
     --color-links-hover-color: #648381;
     --color-border-nav-links-hover-color: #333333;
 
     /*=== ICON COLORS ===*/
-    --color-theme-picker-icon-bg: #333333;
-    --color-theme-picker-icon-color: #ffffff;
-    --color-theme-picker-icon-bg-hover: #555555;
-    --color-theme-picker-icon-color-hover: #ffffff;
+    --color-theme-picker-icon-bg: #555555;
+    --color-theme-picker-icon-color: #f5f5f5f5;
+    --color-theme-picker-icon-bg-hover: #e5e5e5e5;
+    --color-theme-picker-icon-color-hover: #000000;
     --color-x-icon-color: #333333;
     --color-x-icon-hover-color: #E03436;
     --color-footer-icons-color: #333333;
     --color-footer-icons-hover-color: #E03436;
 
+    /*=== SKILLS COLORS ===*/
+    --color-skills-bg: #e5e5e5e5;
+    --color-skills-text-color: #333333;
+    --color-skills-icon-color: #E03436;
+    --color-skills-border: #E03436;
+
+
     /*=== CARD COLORS ===*/
     --color-card-bg: #f5f5f5f5;
     --color-card-text-color: #333333;
     --color-card-title-color: #E03436;
+    --color-card-border: transparent;
 
-    --color-card-repo-button-bg: #E03436;
+    --color-card-repo-button-bg: transparent;
     --color-card-repo-button-bg-hover: #648381;
-    --color-card-repo-button-text-color: #ffffff;
-    --color-card-repo-button-text-color-hover: #ffffff;
-    --color-card-repo-button-border: #E03436;
+    --color-card-repo-button-text-color: #333333;
+    --color-card-repo-button-text-color-hover: #f5f5f5f5;
+    --color-card-repo-button-border: #ddd;
     --color-card-repo-button-border-hover: #648381;
 
-    --color-card-project-button-bg: #333333;
-    --color-card-project-button-bg-hover: #E03436;
-    --color-card-project-button-text-color: #ffffff;
-    --color-card-project-button-text-color-hover: #ffffff;
-    --color-card-project-button-border: #333333;
-    --color-card-project-button-border-hover: #E03436;
+    --color-card-project-button-bg: #E03436;
+    --color-card-project-button-bg-hover: #648381;
+    --color-card-project-button-text-color: #f5f5f5f5;
+    --color-card-project-button-text-color-hover: #f5f5f5f5;
+    --color-card-project-button-border: #E03436;
+    --color-card-project-button-border-hover: #648381;
 
     /*=== VIEW MORE BUTTON COLORS ===*/
     --color-view-more-button-bg: transparent;
     --color-view-more-button-bg-hover: #E03436;
     --color-view-more-button-text-color: #333333;
     --color-view-more-button-text-color-hover: #f5f5f5f5;
-    --color-view-more-button-border: #333333;
+    --color-view-more-button-border: #ddd;
     --color-view-more-button-border-hover: #E03436;
 }

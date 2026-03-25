@@ -33,6 +33,12 @@
                     "footer-icons-color": "#333333",
                     "footer-icons-hover-color": "#E03436"
                 },
+                "skills-colors": {
+                    "skills-bg": "#e5e5e5e5",
+                    "skills-text-color": "#333333",
+                    "skills-icon-color": "#E03436",
+                    "skills-border": "#E03436"
+                },
                 "card-colors": {
                     "card-bg": "#f5f5f5f5",
                     "card-text-color": "#333333",
@@ -56,6 +62,14 @@
                     "view-more-button-text-color-hover": "#f5f5f5f5",
                     "view-more-button-border": "#ddd",
                     "view-more-button-border-hover": "#E03436"
+                },
+                "contact-colors": {
+                    "contact-bg": "#e5e5e5e5",
+                    "contact-text-color": "#333333",
+                    "contact-title-color": "#E03436",
+                    "contact-link-color": "#E03436",
+                    "contact-link-hover-color": "#648381",
+                    "contact-border": "transparent"
                 }
             },
             "theme-picker-options": {
@@ -97,6 +111,12 @@
                     "footer-icons-color": "#ffffff",
                     "footer-icons-hover-color": "#bb86fc"
                 },
+                "skills-colors": {
+                    "skills-bg": "#2c2c2c",
+                    "skills-text-color": "#ffffff",
+                    "skills-icon-color": "#bb86fc",
+                    "skills-border": "#bb86fc"
+                },
                 "card-colors": {
                     "card-bg": "#1e1e1e",
                     "card-text-color": "#ffffff",
@@ -120,6 +140,14 @@
                     "view-more-button-text-color-hover": "#ffffff",
                     "view-more-button-border": "#ffffff",
                     "view-more-button-border-hover": "#bb86fc"
+                },
+                "contact-colors": {
+                    "contact-bg": "#2c2c2c",
+                    "contact-text-color": "#ffffff",
+                    "contact-title-color": "#bb86fc",
+                    "contact-link-color": "#03dac6",
+                    "contact-link-hover-color": "#ffffff",
+                    "contact-border": "#bb86fc"
                 }
             },
             "theme-picker-options": {
@@ -161,6 +189,12 @@
                     "footer-icons-color": "#f0f0f0",
                     "footer-icons-hover-color": "#e7e00d"
                 },
+                "skills-colors": {
+                    "skills-bg": "#2B2B2B",
+                    "skills-text-color": "#f0f0f0",
+                    "skills-icon-color": "#e7e00d",
+                    "skills-border": "#e7e00d"
+                },
                 "card-colors": {
                     "card-bg": "#2B2B2B",
                     "card-text-color": "#e7e00d",
@@ -184,6 +218,14 @@
                     "view-more-button-text-color-hover": "#e7e00d",
                     "view-more-button-border": "#e7e00d",
                     "view-more-button-border-hover": "#e7e00d"
+                },
+                "contact-colors": {
+                    "contact-bg": "#2B2B2B",
+                    "contact-text-color": "#e7e00d",
+                    "contact-title-color": "#e7e00d",
+                    "contact-link-color": "#e7e00d",
+                    "contact-link-hover-color": "#41639c",
+                    "contact-border": "transparent"
                 }
             },
             "fonts": {
@@ -232,6 +274,12 @@
                     "footer-icons-color": "#55ead4",
                     "footer-icons-hover-color": "#c5003c"
                 },
+                "skills-colors": {
+                    "skills-bg": "#000000",
+                    "skills-text-color": "#55ead4",
+                    "skills-icon-color": "#f3e600",
+                    "skills-border": "#f3e600"
+                },
                 "card-colors": {
                     "card-bg": "#000000",
                     "card-text-color": "#f3e600",
@@ -255,6 +303,14 @@
                     "view-more-button-text-color-hover": "#55ead4",
                     "view-more-button-border": "#e7e00d",
                     "view-more-button-border-hover": "#55ead4"
+                },
+                "contact-colors": {
+                    "contact-bg": "#000000",
+                    "contact-text-color": "#f3e600",
+                    "contact-title-color": "#55ead4",
+                    "contact-link-color": "#55ead4",
+                    "contact-link-hover-color": "#c5003c",
+                    "contact-border": "#f3e600"
                 }
             },
             "cursor": {
@@ -300,6 +356,12 @@
                     "footer-icons-color": "#F5F5F5",
                     "footer-icons-hover-color": "#F2C94C"
                 },
+                "skills-colors": {
+                    "skills-bg": "#0E3B2E",
+                    "skills-text-color": "#F5F5F5",
+                    "skills-icon-color": "#F2C94C",
+                    "skills-border": "#5FBF5F"
+                },
                 "card-colors": {
                     "card-bg": "#0E3B2E",
                     "card-text-color": "#F5F5F5",
@@ -323,6 +385,14 @@
                     "view-more-button-text-color-hover": "#9a5430",
                     "view-more-button-border": "#F2C94C",
                     "view-more-button-border-hover": "#D8C9A3"
+                },
+                "contact-colors": {
+                    "contact-bg": "#0E3B2E",
+                    "contact-text-color": "#F5F5F5",
+                    "contact-title-color": "#F2C94C",
+                    "contact-link-color": "#F2C94C",
+                    "contact-link-hover-color": "#5FBF5F",
+                    "contact-border": "#5FBF5F"
                 }
             },
             "theme-picker-options": {
